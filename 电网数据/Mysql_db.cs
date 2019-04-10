@@ -76,8 +76,9 @@ namespace 电网数据
                 Close_Conn(Conn);
                 return result_count;
             }
-            catch
+            catch(MySqlException exp)
             {
+
                 Close_Conn(Conn);
                 return 0;
             }
@@ -191,5 +192,7 @@ namespace 电网数据
             Close_Conn(Conn);
             return result;
         }
+
+       
     }
 }

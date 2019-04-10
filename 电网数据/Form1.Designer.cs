@@ -40,27 +40,33 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
-            this.tabPage2 = new System.Windows.Forms.TabPage();
-            this.label1 = new System.Windows.Forms.Label();
-            this.Id_Label = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.label6 = new System.Windows.Forms.Label();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.label7 = new System.Windows.Forms.Label();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.label8 = new System.Windows.Forms.Label();
+            this.button3 = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
+            this.label12 = new System.Windows.Forms.Label();
+            this.label11 = new System.Windows.Forms.Label();
+            this.label10 = new System.Windows.Forms.Label();
             this.textBox5 = new System.Windows.Forms.TextBox();
             this.label9 = new System.Windows.Forms.Label();
-            this.textBox6 = new System.Windows.Forms.TextBox();
-            this.label10 = new System.Windows.Forms.Label();
-            this.textBox7 = new System.Windows.Forms.TextBox();
-            this.label11 = new System.Windows.Forms.Label();
-            this.label12 = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
+            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.label8 = new System.Windows.Forms.Label();
+            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.label7 = new System.Windows.Forms.Label();
+            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.label6 = new System.Windows.Forms.Label();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.label5 = new System.Windows.Forms.Label();
+            this.Id_Label = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
+            this.tabPage2 = new System.Windows.Forms.TabPage();
+            this.label13 = new System.Windows.Forms.Label();
+            this.Create_label = new System.Windows.Forms.Label();
+            this.textBox8 = new System.Windows.Forms.TextBox();
+            this.label14 = new System.Windows.Forms.Label();
+            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
+            this.dateTimePicker2 = new System.Windows.Forms.DateTimePicker();
+            this.Chang_label = new System.Windows.Forms.Label();
+            this.label16 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.panel1.SuspendLayout();
             this.tabControl1.SuspendLayout();
@@ -79,11 +85,14 @@
             // 
             // dataGridView1
             // 
+            this.dataGridView1.AllowUserToAddRows = false;
+            this.dataGridView1.AllowUserToDeleteRows = false;
             this.dataGridView1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Location = new System.Drawing.Point(16, 6);
             this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.ReadOnly = true;
             this.dataGridView1.RowTemplate.Height = 23;
             this.dataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dataGridView1.Size = new System.Drawing.Size(752, 257);
@@ -145,6 +154,7 @@
             this.PWD_TxtBox.Name = "PWD_TxtBox";
             this.PWD_TxtBox.Size = new System.Drawing.Size(105, 22);
             this.PWD_TxtBox.TabIndex = 7;
+            this.PWD_TxtBox.Text = "5454794547";
             this.PWD_TxtBox.UseSystemPasswordChar = true;
             // 
             // ConnectBtn
@@ -183,19 +193,25 @@
             this.tabControl1.Location = new System.Drawing.Point(2, 46);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
-            this.tabControl1.Size = new System.Drawing.Size(795, 477);
+            this.tabControl1.Size = new System.Drawing.Size(795, 542);
             this.tabControl1.TabIndex = 11;
             // 
             // tabPage1
             // 
             this.tabPage1.AutoScroll = true;
+            this.tabPage1.Controls.Add(this.Chang_label);
+            this.tabPage1.Controls.Add(this.label16);
+            this.tabPage1.Controls.Add(this.dateTimePicker2);
+            this.tabPage1.Controls.Add(this.dateTimePicker1);
+            this.tabPage1.Controls.Add(this.textBox8);
+            this.tabPage1.Controls.Add(this.label14);
+            this.tabPage1.Controls.Add(this.Create_label);
+            this.tabPage1.Controls.Add(this.label13);
             this.tabPage1.Controls.Add(this.button3);
             this.tabPage1.Controls.Add(this.button2);
             this.tabPage1.Controls.Add(this.button1);
             this.tabPage1.Controls.Add(this.label12);
-            this.tabPage1.Controls.Add(this.textBox7);
             this.tabPage1.Controls.Add(this.label11);
-            this.tabPage1.Controls.Add(this.textBox6);
             this.tabPage1.Controls.Add(this.label10);
             this.tabPage1.Controls.Add(this.textBox5);
             this.tabPage1.Controls.Add(this.label9);
@@ -213,102 +229,66 @@
             this.tabPage1.Location = new System.Drawing.Point(4, 22);
             this.tabPage1.Name = "tabPage1";
             this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage1.Size = new System.Drawing.Size(787, 451);
+            this.tabPage1.Size = new System.Drawing.Size(787, 516);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "总表";
             this.tabPage1.UseVisualStyleBackColor = true;
             // 
-            // tabPage2
+            // button3
             // 
-            this.tabPage2.Location = new System.Drawing.Point(4, 22);
-            this.tabPage2.Name = "tabPage2";
-            this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage2.Size = new System.Drawing.Size(787, 375);
-            this.tabPage2.TabIndex = 1;
-            this.tabPage2.Text = "tabPage2";
-            this.tabPage2.UseVisualStyleBackColor = true;
+            this.button3.Location = new System.Drawing.Point(502, 474);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(75, 23);
+            this.button3.TabIndex = 22;
+            this.button3.Text = "修改";
+            this.button3.UseVisualStyleBackColor = true;
             // 
-            // label1
+            // button2
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(30, 287);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(29, 12);
-            this.label1.TabIndex = 3;
-            this.label1.Text = "ID：";
+            this.button2.Location = new System.Drawing.Point(389, 474);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(75, 23);
+            this.button2.TabIndex = 21;
+            this.button2.Text = "删除";
+            this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
-            // Id_Label
+            // button1
             // 
-            this.Id_Label.AutoSize = true;
-            this.Id_Label.Location = new System.Drawing.Point(65, 287);
-            this.Id_Label.Name = "Id_Label";
-            this.Id_Label.Size = new System.Drawing.Size(11, 12);
-            this.Id_Label.TabIndex = 4;
-            this.Id_Label.Text = "0";
+            this.button1.Location = new System.Drawing.Point(281, 474);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(75, 23);
+            this.button1.TabIndex = 20;
+            this.button1.Text = "添加";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.Button1_Click);
             // 
-            // label5
+            // label12
             // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(138, 287);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(65, 12);
-            this.label5.TabIndex = 5;
-            this.label5.Text = "项目名称：";
+            this.label12.AutoSize = true;
+            this.label12.Location = new System.Drawing.Point(242, 361);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(17, 12);
+            this.label12.TabIndex = 19;
+            this.label12.Text = "元";
             // 
-            // textBox1
+            // label11
             // 
-            this.textBox1.Location = new System.Drawing.Point(209, 284);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(331, 21);
-            this.textBox1.TabIndex = 6;
+            this.label11.AutoSize = true;
+            this.label11.Location = new System.Drawing.Point(539, 361);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(65, 12);
+            this.label11.TabIndex = 17;
+            this.label11.Text = "交货日期：";
             // 
-            // textBox2
+            // label10
             // 
-            this.textBox2.Location = new System.Drawing.Point(597, 284);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(171, 21);
-            this.textBox2.TabIndex = 8;
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(550, 287);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(41, 12);
-            this.label6.TabIndex = 7;
-            this.label6.Text = "工令：";
-            // 
-            // textBox3
-            // 
-            this.textBox3.Location = new System.Drawing.Point(89, 321);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(217, 21);
-            this.textBox3.TabIndex = 10;
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(30, 324);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(53, 12);
-            this.label7.TabIndex = 9;
-            this.label7.Text = "合同号：";
-            // 
-            // textBox4
-            // 
-            this.textBox4.Location = new System.Drawing.Point(389, 321);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(379, 21);
-            this.textBox4.TabIndex = 12;
-            // 
-            // label8
-            // 
-            this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(318, 324);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(65, 12);
-            this.label8.TabIndex = 11;
-            this.label8.Text = "买方名称：";
+            this.label10.AutoSize = true;
+            this.label10.Location = new System.Drawing.Point(290, 361);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(65, 12);
+            this.label10.TabIndex = 15;
+            this.label10.Text = "签订日期：";
             // 
             // textBox5
             // 
@@ -326,80 +306,169 @@
             this.label9.TabIndex = 13;
             this.label9.Text = "金额：";
             // 
-            // textBox6
+            // textBox4
             // 
-            this.textBox6.Location = new System.Drawing.Point(389, 358);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(133, 21);
-            this.textBox6.TabIndex = 16;
+            this.textBox4.Location = new System.Drawing.Point(389, 321);
+            this.textBox4.Name = "textBox4";
+            this.textBox4.Size = new System.Drawing.Size(379, 21);
+            this.textBox4.TabIndex = 12;
             // 
-            // label10
+            // label8
             // 
-            this.label10.AutoSize = true;
-            this.label10.Location = new System.Drawing.Point(318, 361);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(65, 12);
-            this.label10.TabIndex = 15;
-            this.label10.Text = "签订日期：";
+            this.label8.AutoSize = true;
+            this.label8.Location = new System.Drawing.Point(318, 324);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(65, 12);
+            this.label8.TabIndex = 11;
+            this.label8.Text = "买方名称：";
             // 
-            // textBox7
+            // textBox3
             // 
-            this.textBox7.Location = new System.Drawing.Point(635, 358);
-            this.textBox7.Name = "textBox7";
-            this.textBox7.Size = new System.Drawing.Size(133, 21);
-            this.textBox7.TabIndex = 18;
+            this.textBox3.Location = new System.Drawing.Point(89, 321);
+            this.textBox3.Name = "textBox3";
+            this.textBox3.Size = new System.Drawing.Size(217, 21);
+            this.textBox3.TabIndex = 10;
             // 
-            // label11
+            // label7
             // 
-            this.label11.AutoSize = true;
-            this.label11.Location = new System.Drawing.Point(564, 361);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(65, 12);
-            this.label11.TabIndex = 17;
-            this.label11.Text = "交货日期：";
+            this.label7.AutoSize = true;
+            this.label7.Location = new System.Drawing.Point(30, 324);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(53, 12);
+            this.label7.TabIndex = 9;
+            this.label7.Text = "合同号：";
             // 
-            // label12
+            // textBox2
             // 
-            this.label12.AutoSize = true;
-            this.label12.Location = new System.Drawing.Point(242, 361);
-            this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(17, 12);
-            this.label12.TabIndex = 19;
-            this.label12.Text = "元";
+            this.textBox2.Location = new System.Drawing.Point(597, 284);
+            this.textBox2.Name = "textBox2";
+            this.textBox2.Size = new System.Drawing.Size(171, 21);
+            this.textBox2.TabIndex = 8;
             // 
-            // button1
+            // label6
             // 
-            this.button1.Location = new System.Drawing.Point(32, 408);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 20;
-            this.button1.Text = "添加";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.Button1_Click);
+            this.label6.AutoSize = true;
+            this.label6.Location = new System.Drawing.Point(550, 287);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(41, 12);
+            this.label6.TabIndex = 7;
+            this.label6.Text = "工令：";
             // 
-            // button2
+            // textBox1
             // 
-            this.button2.Location = new System.Drawing.Point(140, 408);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(75, 23);
-            this.button2.TabIndex = 21;
-            this.button2.Text = "删除";
-            this.button2.UseVisualStyleBackColor = true;
+            this.textBox1.Location = new System.Drawing.Point(209, 284);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(331, 21);
+            this.textBox1.TabIndex = 6;
             // 
-            // button3
+            // label5
             // 
-            this.button3.Location = new System.Drawing.Point(253, 408);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(75, 23);
-            this.button3.TabIndex = 22;
-            this.button3.Text = "修改";
-            this.button3.UseVisualStyleBackColor = true;
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(138, 287);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(65, 12);
+            this.label5.TabIndex = 5;
+            this.label5.Text = "项目名称：";
+            // 
+            // Id_Label
+            // 
+            this.Id_Label.AutoSize = true;
+            this.Id_Label.Location = new System.Drawing.Point(65, 287);
+            this.Id_Label.Name = "Id_Label";
+            this.Id_Label.Size = new System.Drawing.Size(11, 12);
+            this.Id_Label.TabIndex = 4;
+            this.Id_Label.Text = "0";
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(30, 287);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(29, 12);
+            this.label1.TabIndex = 3;
+            this.label1.Text = "ID：";
+            // 
+            // tabPage2
+            // 
+            this.tabPage2.Location = new System.Drawing.Point(4, 22);
+            this.tabPage2.Name = "tabPage2";
+            this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage2.Size = new System.Drawing.Size(787, 451);
+            this.tabPage2.TabIndex = 1;
+            this.tabPage2.Text = "tabPage2";
+            this.tabPage2.UseVisualStyleBackColor = true;
+            // 
+            // label13
+            // 
+            this.label13.AutoSize = true;
+            this.label13.Location = new System.Drawing.Point(42, 437);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(65, 12);
+            this.label13.TabIndex = 23;
+            this.label13.Text = "创建日期：";
+            // 
+            // Create_label
+            // 
+            this.Create_label.AutoSize = true;
+            this.Create_label.Location = new System.Drawing.Point(113, 437);
+            this.Create_label.Name = "Create_label";
+            this.Create_label.Size = new System.Drawing.Size(101, 12);
+            this.Create_label.TabIndex = 24;
+            this.Create_label.Text = "0000-00-00 00:00";
+            // 
+            // textBox8
+            // 
+            this.textBox8.Location = new System.Drawing.Point(76, 394);
+            this.textBox8.Name = "textBox8";
+            this.textBox8.Size = new System.Drawing.Size(464, 21);
+            this.textBox8.TabIndex = 26;
+            // 
+            // label14
+            // 
+            this.label14.AutoSize = true;
+            this.label14.Location = new System.Drawing.Point(32, 397);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(41, 12);
+            this.label14.TabIndex = 25;
+            this.label14.Text = "备注：";
+            // 
+            // dateTimePicker1
+            // 
+            this.dateTimePicker1.Location = new System.Drawing.Point(361, 358);
+            this.dateTimePicker1.Name = "dateTimePicker1";
+            this.dateTimePicker1.Size = new System.Drawing.Size(130, 21);
+            this.dateTimePicker1.TabIndex = 27;
+            // 
+            // dateTimePicker2
+            // 
+            this.dateTimePicker2.Location = new System.Drawing.Point(613, 358);
+            this.dateTimePicker2.Name = "dateTimePicker2";
+            this.dateTimePicker2.Size = new System.Drawing.Size(130, 21);
+            this.dateTimePicker2.TabIndex = 28;
+            // 
+            // Chang_label
+            // 
+            this.Chang_label.AutoSize = true;
+            this.Chang_label.Location = new System.Drawing.Point(318, 437);
+            this.Chang_label.Name = "Chang_label";
+            this.Chang_label.Size = new System.Drawing.Size(101, 12);
+            this.Chang_label.TabIndex = 30;
+            this.Chang_label.Text = "0000-00-00 00:00";
+            // 
+            // label16
+            // 
+            this.label16.AutoSize = true;
+            this.label16.Location = new System.Drawing.Point(247, 437);
+            this.label16.Name = "label16";
+            this.label16.Size = new System.Drawing.Size(65, 12);
+            this.label16.TabIndex = 29;
+            this.label16.Text = "修改日期：";
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(802, 526);
+            this.ClientSize = new System.Drawing.Size(802, 591);
             this.Controls.Add(this.tabControl1);
             this.Controls.Add(this.panel1);
             this.Name = "Form1";
@@ -429,9 +498,7 @@
         private System.Windows.Forms.TabControl tabControl1;
         private System.Windows.Forms.TabPage tabPage1;
         private System.Windows.Forms.TabPage tabPage2;
-        private System.Windows.Forms.TextBox textBox7;
         private System.Windows.Forms.Label label11;
-        private System.Windows.Forms.TextBox textBox6;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.TextBox textBox5;
         private System.Windows.Forms.Label label9;
@@ -449,6 +516,14 @@
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.TextBox textBox8;
+        private System.Windows.Forms.Label label14;
+        private System.Windows.Forms.Label Create_label;
+        private System.Windows.Forms.Label label13;
+        private System.Windows.Forms.DateTimePicker dateTimePicker2;
+        private System.Windows.Forms.DateTimePicker dateTimePicker1;
+        private System.Windows.Forms.Label Chang_label;
+        private System.Windows.Forms.Label label16;
     }
 }
 
